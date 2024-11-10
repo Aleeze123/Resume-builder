@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aleeza's Dynamic Resume</title>
+  <link rel="stylesheet" href="generate_resume.css"> 
+</head>
+<body>
+  
+  <div class="resume-container">
+    <h1>Generate your resume</h1>
+    <section>
+      <form id="resumeForm">
+        <label>Name: <input type="text" id="name" required></label><br><br>
+        <label>Profile Photo: <input type="file" id="photo"></label><br><br>
+        <label>Email: <input type="email" id="email" required></label><br><br>
+        <label>Phone: <input type="text" id="phone" required></label><br><br>
+        <label>About Me: <textarea id="about-me"></textarea></label><br><br>
+        <label>Address: <textarea id="address" required></textarea></label><br><br>
+        <label>Institution: <input type="text" id="institution" required></label><br><br>
+        <label>Degree: <input type="text" id="degree" required></label><br><br>
+        <label>Graduation Date: <input type="date" id="graduation-date" required></label><br><br>
+        <label>Skills: <textarea id="skills" required></textarea></label><br><br>
+        <label>Company: <input type="text" id="company" required></label><br><br>
+        <label>Position: <input type="text" id="position" required></label><br><br>
+        <label>Start Date: <input type="date" id="start-date" required></label><br><br>
+        <label>End Date: <input type="date" id="end-date"></label><br><br>
+        <label>Responsibilities: <textarea id="responsibilities" required></textarea></label><br><br>
+       
+        <button type="button" id="generate-resume">Generate Resume</button>
+      </form>
+    </section>
+
+    <div id="resume-output" class="hidden">
+      <div id="resume-content"></div>
+      <button class="edit-button hidden" id="edit-resume">Edit Resume</button>
+      <button id="download-resume" class="hidden">Download Pdf</button>
+      <button id="share-resume" class="hidden">Share Resume via 🔗URL</button>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/0.5.0-beta4/html2canvas.min.js"></script>
+  <script src="generate_resume.js"></script>
+</body>
+</html>

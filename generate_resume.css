@@ -1,0 +1,254 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f7f9fc;
+    color: #333;
+    line-height: 1.8;
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1, h2 {
+    font-family: 'Lora', serif;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+/* Resume Container */
+.resume-container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid #e1e4e8;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* Resume Header */
+.resume-header img {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    border: 3px solid #333;
+}
+
+/* Section Styling */
+.resume-section {
+    margin-bottom: 25px;
+    padding: 20px;
+    border-left: 5px solid #333;
+    background-color: #fafafa;
+    border-radius: 8px;
+}
+
+.resume-section h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+    font-weight: 700;
+}
+
+.resume-section p {
+    font-size: 16px;
+    color: #333;
+}
+
+/* Hidden Class */
+.hidden {
+    display: none;
+}
+
+/* Button Styling */
+button {
+    padding: 12px 25px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #333;
+    border: 2px solid #333;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    outline: none;
+}
+
+button:hover {
+    background-color: #1a202c;
+    transform: translateY(-2px);
+    box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Edit Button Styling */
+.edit-button {
+    background-color: #000000;
+    border: 2px solid #333;
+}
+
+.edit-button:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Download & Share Buttons */
+#download-resume,
+#share-resume {
+    display: inline-block;
+    padding: 14px 25px;
+    font-size: 18px;
+    color: #ffffff;
+    background-color: #000000;
+    border: 2px solid #333;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+#download-resume:hover,
+#share-resume:hover {
+    background-color: #000000;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+/* Form Styling */
+label {
+    display: block;
+    margin: 12px 0 5px;
+    font-size: 18px;
+    color: #333;
+    font-weight: 600;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fafafa;
+    color: #333;
+    font-size: 16px;
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* File Input Styling */
+input[type="file"] {
+    padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .resume-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .resume-header img {
+        width: 140px;
+        height: 140px;
+    }
+
+    button {
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    .resume-section h2 {
+        font-size: 22px;
+    }
+
+    input, textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* Medium Screen (Tablets and below) */
+@media (max-width: 768px) {
+    .resume-container {
+        width: 95%;
+        padding: 20px;
+    }
+
+    .resume-header img {
+        width: 140px;
+        height: 140px;
+    }
+
+    button {
+        width: 100%;
+        padding: 16px;
+        font-size: 16px;
+    }
+
+    .resume-section h2 {
+        font-size: 22px;
+    }
+
+    input, textarea {
+        padding: 12px;
+        font-size: 14px;
+    }
+}
+
+/* Small Screen (Mobile) */
+@media (max-width: 480px) {
+    body {
+        padding: 20px 0;
+    }
+
+    .resume-container {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    button {
+        padding: 14px;
+        font-size: 16px;
+    }
+
+    label, input, textarea {
+        font-size: 14px;
+    }
+
+    .resume-header img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .resume-section {
+        padding: 15px;
+    }
+
+    /* Form Elements */
+    input, textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+    .resume-section h2 {
+        font-size: 20px;
+    }
+}
+
